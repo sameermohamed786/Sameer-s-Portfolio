@@ -1,0 +1,10 @@
+{
+  "name": "sameer-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Creative Technologist Portfolio for Mohamed Sameer M",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server ./ -p 3000 -o"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Sameer M | Creative Technologist & UI/UX Designer</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Portfolio of Mohamed Sameer M - Product Designer & Full-Stack Developer. Discover modern UI/UX design case studies and robust FastAPI/React engineering solutions.">
+    <meta name="keywords" content="UI/UX Design, Full Stack Developer, Frontend Engineer, Figma, React, FastAPI, Measi, Chennai, Portfolio, Awwwards">
+    <meta name="author" content="Mohamed Sameer M">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Mohamed Sameer M | Creative Technologist">
+    <meta property="og:description" content="Explore the portfolio of Mohamed Sameer, showing off premium digital design and full-stack engineering.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.jpeg">
+    
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .hero-section {
+            min-height: auto !important;
+            height: auto !important;
+            display: block !important;
+            padding-top: 130px !important;
+            padding-bottom: 20px !important;
+        }
+        .hero-portrait-wrapper {
+            height: 450px !important;
+        }
+        .scroll-down-indicator {
+            display: none !important;
+        }
+    </style>
+    
+
+</head>
+<body class="dark-theme">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">SAMEER<span>.</span></div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p class="loader-status">Initializing Creative Workspace...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="glass-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo">SAMEER<span>M</span></a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Timeline</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Credentials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Dropdown Resume Download -->
+                <div class="resume-dropdown">
+                    <button class="btn btn-nav btn-glass" id="resume-btn">
+                        <span>Get Resume</span>
+                        <i data-lucide="download"></i>
+                    </button>
+                    <ul class="resume-dropdown-menu">
+                        <li><a href="assets/sameer-ui-ux.pdf" download="Sameer_UI_UX_Designer_Resume.pdf"><i data-lucide="palette"></i> UI/UX Resume</a></li>
+                        <li><a href="assets/sameer-developer.pdf" download="Sameer_Full_Stack_Developer_Resume.pdf"><i data-lucide="code-2"></i> Developer Resume</a></li>
+                        <li><a href="assets/sameer-networking.pdf" download="Sameer_Networking_Resume.pdf"><i data-lucide="network"></i> Network Eng Resume</a></li>
+                    </ul>
+                </div>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-text">PORTFOLIO</div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-fade">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Roles & Internships</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="reveal-text delay-1">MOHAMED SAMEER</span>
+                        <span class="reveal-text accent-text delay-2">CREATIVE TECHNOLOGIST</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle reveal-fade delay-3">
+                        Bridging the gap between premium UI/UX design and high-performance full-stack engineering. Crafting cinematic user experiences that balance aesthetics, accessibility, and clean architecture.
+                    </p>
+                    
+                    <div class="hero-actions reveal-fade delay-4">
+                        <a href="#projects" class="btn btn-primary magnetic" id="cta-work">
+                            <span>Explore Case Studies</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline btn-glass magnetic" id="cta-contact">
+                            <span>Let's Collaborate</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials reveal-fade delay-5">
+                        <a href="https://www.behance.net/mdsameerms1c" target="_blank" class="social-icon magnetic" aria-label="Behance Profile"><i data-lucide="palette"></i></a>
+                        <a href="https://github.com/sameerms" target="_blank" class="social-icon magnetic" aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+                        <a href="mailto:mdsameerms1.c@gmail.com" class="social-icon magnetic" aria-label="Email"><i data-lucide="mail"></i></a>
+                        <a href="tel:+919025477476" class="social-icon magnetic" aria-label="Phone"><i data-lucide="phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Large Portrait Column -->
+                <div class="hero-portrait-wrapper reveal-fade delay-3">
+                    <img src="assets/sameer-hero-suit.png" alt="Mohamed Sameer M Portrait" class="hero-portrait-img">
+                </div>
+
+
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me">
+                <span class="scroll-text">Scroll Down</span>
+                <i data-lucide="chevron-down" class="scroll-arrow-icon"></i>
+            </a>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">01 / DISCOVER</span>
+                    <h2 class="section-title">The Story of Sameer</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Photo Column -->
+                    <div class="about-visual scroll-reveal-left">
+                        <div class="tilt-card-wrapper">
+                            <div class="about-image-card tilt-card" id="profile-card">
+                                <img src="assets/about-creative.jpg" alt="Where Clarity Meets Creativity - The Link" class="profile-img">
+                                <div class="card-overlay-gradient"></div>
+                                <div class="card-border-glow"></div>
+                            </div>
+                            <div class="portrait-background-decor"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Column -->
+                    <div class="about-text scroll-reveal-right">
+                        <h3>Creative UI/UX Designer &amp; Capable Full-Stack Engineer</h3>
+                        
+                        <p class="about-bio">
+                            I am a motivated, detail-oriented designer and developer currently pursuing my **MCA** (Master of Computer Applications). I thrive at the intersection of aesthetic layout engineering and robust software development.
+                        </p>
+                        <p class="about-bio">
+                            With hands-on experience designing user-centric flows at **Ideassion Technology Solution** and constructing complete B2B applications at **OMPOI**, I specialize in transforming raw user and business requirements into seamless, engaging digital products. Whether conducting user research in Figma or building optimized REST APIs using FastAPI, PostgreSQL, and React, my focus remains constant: **delivering absolute pixel-perfection and high performance.**
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-item glass-card">
+                                <span class="stat-number animate-counter" data-target="8.6" data-decimals="1">0.0</span>
+                                <span class="stat-label">MCA CGPA</span>
+                            </div>
+                            <div class="stat-item glass-card">
+                                <span class="stat-number animate-counter" data-target="6" data-suffix="+">0</span>
+                                <span class="stat-label">Complex Projects</span>
+                            </div>
+                            <div class="stat-item glass-card">
+                                <span class="stat-number animate-counter" data-target="2" data-suffix="+">0</span>
+                                <span class="stat-label">Internships</span>
+                            </div>
+                            <div class="stat-item glass-card">
+                                <span class="stat-number animate-counter" data-target="3" data-suffix="+">0</span>
+                                <span class="stat-label">Industry Certs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">02 / EXPERTISE</span>
+                    <h2 class="section-title">Technical Skillset</h2>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="ui-ux">UI/UX Design</button>
+                    <button class="tab-btn" data-tab="frontend">Frontend Dev</button>
+                    <button class="tab-btn" data-tab="backend">Backend &amp; SQL</button>
+                    <button class="tab-btn" data-tab="tools">Tools &amp; Systems</button>
+                </div>
+
+                <!-- Skills Showcase Container -->
+                <div class="skills-grid-container">
+                    
+                    <!-- UI/UX Design Tab -->
+                    <div class="skills-category-content active" id="tab-ui-ux">
+                        <div class="skills-grid">
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="layout"></i></div>
+                                <h4>User Research &amp; Analysis</h4>
+                                <p>Empathy mapping, user interviews, persona mapping, and usability testing.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="columns-3"></i></div>
+                                <h4>Wireframing &amp; Prototyping</h4>
+                                <p>Creating low/high-fidelity wireframes, interactive flows, and micro-interactions in Figma.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="smartphone"></i></div>
+                                <h4>Responsive Interfaces</h4>
+                                <p>Designing adaptable UI systems scaling fluidly across mobile, tablet, and desktop screens.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="component"></i></div>
+                                <h4>Design Systems</h4>
+                                <p>Building robust components, style tokens, and accessible variants for cross-functional Hand-off.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Tab -->
+                    <div class="skills-category-content" id="tab-frontend">
+                        <div class="skills-grid">
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="file-json"></i></div>
+                                <h4>React.js &amp; Next.js</h4>
+                                <p>Building dynamic single-page applications and Server-Side Rendered (SSR) B2B web portals.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="code"></i></div>
+                                <h4>Modern JavaScript</h4>
+                                <p>ES6+, asynchronous flow control, API integration, and clean modular structures.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="blocks"></i></div>
+                                <h4>HTML5 &amp; Vanilla CSS3</h4>
+                                <p>Semantic structuring, CSS Grid, Flexbox, custom CSS animations, and variable-based design systems.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="wind"></i></div>
+                                <h4>Component Architecture</h4>
+                                <p>Creating decoupled, reusable front-end component configurations with state management.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & DB Tab -->
+                    <div class="skills-category-content" id="tab-backend">
+                        <div class="skills-grid">
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="terminal"></i></div>
+                                <h4>Python &amp; FastAPI</h4>
+                                <p>Constructing modular, asynchronous REST APIs with type-validation and auto-generated OpenAPI docs.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="database"></i></div>
+                                <h4>PostgreSQL &amp; Relational SQL</h4>
+                                <p>Schema design, foreign key relationships, complex joins, and transactional database integrity.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 84%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="brackets"></i></div>
+                                <h4>Oracle PL/SQL Development</h4>
+                                <p>Writing stored procedures, optimization routines, and triggers to handle patient/enterprise data.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="shield-check"></i></div>
+                                <h4>RBAC Security Workflows</h4>
+                                <p>Implementing Role-Based Access Control and authentication for multi-stakeholder dashboards.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Systems Tab -->
+                    <div class="skills-category-content" id="tab-tools">
+                        <div class="skills-grid">
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="git-branch"></i></div>
+                                <h4>Git &amp; GitHub Version Control</h4>
+                                <p>Branch management, team pull requests, reviews, and code merging pipelines.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="folder-git-2"></i></div>
+                                <h4>Alembic Migration Tool</h4>
+                                <p>Handling schema progression and automated database revision rollouts in Python environments.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="server"></i></div>
+                                <h4>Networking Essentials</h4>
+                                <p>Basic diagnostic troubleshooting, TCP/IP structures, DNS setups, and client-server connectivity.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="skill-card glass-card tilt-card">
+                                <div class="skill-icon"><i data-lucide="image"></i></div>
+                                <h4>Editing &amp; Content Tools</h4>
+                                <p>Photoshop, Premiere Pro, vector manipulation, and digital asset preparation.</p>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">03 / TIMELINE</span>
+                    <h2 class="section-title">Professional Journey</h2>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress" id="timeline-progress-bar"></div>
+                    </div>
+
+                    <!-- Experience Block 1: OMPOI -->
+                    <div class="timeline-item left scroll-reveal-left">
+                        <div class="timeline-dot"><i data-lucide="code-2"></i></div>
+                        <div class="timeline-content glass-card tilt-card">
+                            <span class="timeline-date">Mar 2026</span>
+                            <h3 class="timeline-role">Full Stack Developer</h3>
+                            <h4 class="timeline-company">OMPOI</h4>
+                            <p class="timeline-desc">
+                                Engineered a multi-stakeholder B2B marketplace platform using FastAPI, Next.js, React, TypeScript, and PostgreSQL. Supported complex role divisions including Buyers, Sellers, Agents, and Administrators.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Implemented secure Role-Based Access Control (RBAC) workflows across web interfaces.</li>
+                                <li>Managed incremental database structural modifications utilizing Alembic migration setups.</li>
+                                <li>Collaborated on AI feature integrations, including automated product details rendering and initial price prediction.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="badge">FastAPI</span>
+                                <span class="badge">Next.js</span>
+                                <span class="badge">PostgreSQL</span>
+                                <span class="badge">Alembic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Block 2: Ideassion -->
+                    <div class="timeline-item right scroll-reveal-right">
+                        <div class="timeline-dot"><i data-lucide="palette"></i></div>
+                        <div class="timeline-content glass-card tilt-card">
+                            <span class="timeline-date">Nov 2025 - Jan 2026</span>
+                            <h3 class="timeline-role">UI/UX Designer Intern</h3>
+                            <h4 class="timeline-company">Ideassion Technology Solution</h4>
+                            <p class="timeline-desc">
+                                Acquired deep, practical knowledge of core layout principles to map intuitive and highly interactive mobile and web interfaces.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Developed clean wireframe pathways, high-fidelity prototypes, and cohesive system layouts in Figma.</li>
+                                <li>Identified usability problems and redesigned screen logic to significantly reduce user friction.</li>
+                                <li>Coordinated directly with design leads and engineering members to translate mockups into code-ready assets.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="badge">Figma</span>
+                                <span class="badge">User Flows</span>
+                                <span class="badge">Prototyping</span>
+                                <span class="badge">Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Featured Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">04 / SHOWCASE</span>
+                    <h2 class="section-title">Case Studies</h2>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: C-Hub -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="c-hub">
+                        <div class="project-image">
+                            <img src="assets/c-hub-cover.png" alt="C-Hub Maritime Ecosystem Mobile App Design" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">UI/UX Design • Mobile App</span>
+                            <h3>C-Hub: Maritime Ecosystem</h3>
+                            <p>End-to-end mobile design featuring streamlined onboarding, multi-service bookings, marketplace integrations, and live weather tracking.</p>
+                            <div class="project-tags">
+                                <span class="badge">Figma</span>
+                                <span class="badge">Product Design</span>
+                                <span class="badge">Telemetry UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: B2B Commodity Marketplace -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="commodity-mkt">
+                        <div class="project-image">
+                            <img src="assets/commodity-cover.jpg" alt="B2B Commodity Marketplace Design" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">Full-Stack Development • Web Platform</span>
+                            <h3>B2B Commodity Marketplace</h3>
+                            <p>Multi-stakeholder agricultural trading system built with Next.js, React, FastAPI, and PostgreSQL with modular microservice readiness.</p>
+                            <div class="project-tags">
+                                <span class="badge">FastAPI</span>
+                                <span class="badge">Next.js</span>
+                                <span class="badge">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Sequence Financial -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="sequence">
+                        <div class="project-image">
+                            <img src="assets/sequence-cover.jpg" alt="Sequence Financial Dashboard UI/UX Design" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">UI/UX Design • Finance Dashboard</span>
+                            <h3>Sequence Financial Dashboard</h3>
+                            <p>Premium banking portal design focusing on real-time transaction clarity, dense financial charts, and clean asset visualizations.</p>
+                            <div class="project-tags">
+                                <span class="badge">Figma</span>
+                                <span class="badge">Dashboard UI</span>
+                                <span class="badge">Data Viz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: OMPOI Platform -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="ompoi-b2b">
+                        <div class="project-image">
+                            <img src="assets/ompoi-cover.jpg" alt="OMPOI B2B Escrow & Platform Design" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">Software Engineering • B2B Marketplace</span>
+                            <h3>OMPOI B2B Escrow &amp; Marketplace</h3>
+                            <p>B2B platform featuring role-based dashboards, database migration flows via Alembic, and integrated price prediction API models.</p>
+                            <div class="project-tags">
+                                <span class="badge">React.js</span>
+                                <span class="badge">FastAPI</span>
+                                <span class="badge">Alembic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: ITS Construction -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="its-const">
+                        <div class="project-image">
+                            <img src="assets/construction-cover.png" alt="ITS Construction Corporate Site Design" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">UI/UX Design • Corporate Landing</span>
+                            <h3>ITS Construction Corporate Site</h3>
+                            <p>Modern design system established for an infrastructure firm, highlighting past projects, industry insights, and active client portals.</p>
+                            <div class="project-tags">
+                                <span class="badge">Figma</span>
+                                <span class="badge">Corporate Identity</span>
+                                <span class="badge">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Hospital System -->
+                    <div class="project-card glass-card tilt-card scroll-reveal-bottom" data-project="hospital">
+                        <div class="project-image">
+                            <img src="assets/hospital-cover.jpg" alt="Hospital Integrated Patient Database Solution" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-secondary btn-small open-case-study">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">Database Design • PL/SQL Integration</span>
+                            <h3>Integrated Hospital Solution</h3>
+                            <p>Optimized database schema, custom stored procedures, and triggers ensuring real-time patient record communication.</p>
+                            <div class="project-tags">
+                                <span class="badge">PL/SQL</span>
+                                <span class="badge">DB Optimization</span>
+                                <span class="badge">Triggers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Certifications Section -->
+        <section id="certifications" class="certs-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">05 / VERIFIED</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="certs-grid">
+                    
+                    <div class="cert-card glass-card tilt-card scroll-reveal-left">
+                        <div class="cert-header">
+                            <i data-lucide="award" class="cert-badge-icon"></i>
+                            <span class="cert-date">Nov 2025 - Jan 2026</span>
+                        </div>
+                        <h3>UI/UX Internship Certificate</h3>
+                        <p class="cert-issuer">Ideassion Technology Solution</p>
+                        <p class="cert-details">Completed three months of rigorous hands-on layout, system mockup design, and UI handoff processes on real B2B client applications.</p>
+                    </div>
+
+                    <div class="cert-card glass-card tilt-card scroll-reveal-bottom">
+                        <div class="cert-header">
+                            <i data-lucide="award" class="cert-badge-icon"></i>
+                            <span class="cert-date">Aug - Sep 2025</span>
+                        </div>
+                        <h3>MasterClass in UI/UX Design</h3>
+                        <p class="cert-issuer">Novi Tech</p>
+                        <p class="cert-details">Specialized course focusing on User Experience strategies, detailed wireframing sequences, information mapping, and mobile app design rules.</p>
+                    </div>
+
+                    <div class="cert-card glass-card tilt-card scroll-reveal-right">
+                        <div class="cert-header">
+                            <i data-lucide="award" class="cert-badge-icon"></i>
+                            <span class="cert-date">Jun 2025</span>
+                        </div>
+                        <h3>Training in UI/UX Design</h3>
+                        <p class="cert-issuer">Futurofocus</p>
+                        <p class="cert-details">Foundational certification covering typography parameters, layout geometry, grid guides, and building clean interfaces in Figma.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Education & 8. Interests Section -->
+        <section id="education" class="edu-interests-section scroll-reveal">
+            <div class="container">
+                <div class="edu-interests-grid">
+                    
+                    <!-- Education Column -->
+                    <div class="edu-column scroll-reveal-left">
+                        <div class="section-header">
+                            <span class="section-tagline">06 / ACADEMICS</span>
+                            <h2 class="section-title">Education</h2>
+                        </div>
+                        <div class="edu-timeline">
+                            
+                            <div class="edu-card glass-card">
+                                <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                                <span class="edu-duration">2024 - 2026 (Present)</span>
+                                <h3>Master of Computer Applications (MCA)</h3>
+                                <p class="edu-school">MEASI Institute of Information Technology</p>
+                                <span class="edu-grade"><i data-lucide="star"></i> CGPA: 8.6 / 10.0</span>
+                                <p class="edu-location">Chennai, Tamil Nadu</p>
+                            </div>
+
+                            <div class="edu-card glass-card">
+                                <div class="edu-icon"><i data-lucide="award"></i></div>
+                                <span class="edu-duration">2021 - 2024</span>
+                                <h3>Bachelor of Science (B.Sc) in Computer Science</h3>
+                                <p class="edu-school">PET Arts &amp; Science College</p>
+                                <span class="edu-grade"><i data-lucide="star"></i> CGPA: 8.4 / 10.0</span>
+                                <p class="edu-location">Tirunelveli, Tamil Nadu</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Interests Column -->
+                    <div class="interests-column scroll-reveal-right">
+                        <div class="section-header">
+                            <span class="section-tagline">07 / PURSUITS</span>
+                            <h2 class="section-title">Interests &amp; Focus</h2>
+                        </div>
+                        <div class="interests-content glass-card">
+                            <h3>Active Technological Engagements</h3>
+                            <p>Beyond design and coding, I dedicate my focus to learning, creating, and automating workflows. Here is what sparks my interest:</p>
+                            
+                            <div class="interests-cloud">
+                                <div class="interest-bubble">
+                                    <i data-lucide="cpu"></i>
+                                    <span>Artificial Intelligence</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="wand-2"></i>
+                                    <span>AI Automation Tools</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="film"></i>
+                                    <span>Premiere Pro Editing</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="image"></i>
+                                    <span>Photoshop Editing</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="pencil-ruler"></i>
+                                    <span>Wireframing Specs</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="activity"></i>
+                                    <span>High-Fidelity Prototyping</span>
+                                </div>
+                                <div class="interest-bubble">
+                                    <i data-lucide="music"></i>
+                                    <span>Video Post-Production</span>
+                                </div>
+                            </div>
+
+                            <!-- Showcase image of creative activity (or decoration) -->
+                            <div class="interests-decor-card">
+                                <div class="decor-glow"></div>
+                                <div class="decor-text font-mono">> sameer --focus: automation --creative: high</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">08 / INITIATE</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Left: Contact info -->
+                    <div class="contact-info scroll-reveal-left">
+                        <h3>Let's build something exceptional together</h3>
+                        <p class="contact-pitch">
+                            Whether you represent an agency searching for a UI/UX design intern, a tech company needing a capable full-stack developer who understands layout, or a client looking to build a new interface from scratch, my inbox is always open.
+                        </p>
+
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="c-icon"><i data-lucide="mail"></i></div>
+                                <div class="c-text">
+                                    <span>Write me an email</span>
+                                    <a href="mailto:mdsameerms1.c@gmail.com" class="magnetic-target">mdsameerms1.c@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="c-icon"><i data-lucide="phone"></i></div>
+                                <div class="c-text">
+                                    <span>Call/WhatsApp</span>
+                                    <a href="tel:+919025477476" class="magnetic-target">+91 90254 77476</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="c-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="c-text">
+                                    <span>Based in</span>
+                                    <p>Chennai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials-wrapper">
+                            <span>Connect on social networks</span>
+                            <div class="socials-list">
+                                <a href="https://www.behance.net/mdsameerms1c" target="_blank" class="social-btn magnetic" aria-label="Behance Profile"><i data-lucide="palette"></i> Behance</a>
+                                <a href="https://github.com/sameerms" target="_blank" class="social-btn magnetic" aria-label="GitHub Profile"><i data-lucide="github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Premium Form -->
+                    <div class="contact-form-container glass-card scroll-reveal-right">
+                        <form id="portfolio-contact-form" class="premium-form" onsubmit="event.preventDefault(); alert('Message simulation sent successfully! Sameer will receive this soon.'); this.reset();">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                    <span class="input-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="email" id="form-email" required placeholder=" ">
+                                    <label for="form-email">Email Address</label>
+                                    <span class="input-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-subject" required placeholder=" ">
+                                    <label for="form-subject">Subject</label>
+                                    <span class="input-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <textarea id="form-message" required rows="4" placeholder=" "></textarea>
+                                    <label for="form-message">Describe your project / opportunity</label>
+                                    <span class="input-line"></span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full magnetic" id="submit-message">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Mohamed Sameer M. All Rights Reserved.</p>
+            <p class="design-credit">Designed &amp; Built with <i data-lucide="heart" class="heart-icon"></i> as a Premium Experience</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Case Study Modal Overlay -->
+    <div class="case-study-modal" id="case-study-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <span class="modal-meta" id="modal-project-meta">Case Study</span>
+                <button class="modal-close" id="modal-close-btn" aria-label="Close Case Study"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Programmatically populated details -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Case Studies Database (Used by script.js to inject contents) -->
+    <div style="display: none;" id="cases-db">
+        
+        <div id="case-c-hub">
+            <h2 class="modal-title">C-Hub: End-to-End Product Design for a Maritime Mobile Ecosystem</h2>
+            <div class="modal-badge-row">
+                <span class="badge">Figma</span>
+                <span class="badge">Product Design</span>
+                <span class="badge">User Onboarding</span>
+                <span class="badge">Marketplace</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Lead End-to-End Product Designer</strong> (Nov 2025 - Jan 2026). Handled user research, storyboarding, user flows, layout architecture, high-fidelity UI prototyping, and interactive mockups.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>C-Hub is an all-in-one maritime ecosystem mobile application designed to simplify workflows for seafarers, harbor captains, and shipping logistics crews. It bridges the gap between fragmented port booking processes, local supplier marketplaces, and real-time weather analytics.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Design Process</h3>
+                <p>We followed a structured Double Diamond UI/UX approach:</p>
+                <ul class="modal-bullets">
+                    <li><strong>Discover:</strong> Conducted interviews with 15 maritime agents to locate shipping scheduling bottlenecks.</li>
+                    <li><strong>Define:</strong> Mapped core personas (Captain Lars, Vendor Anya) and created onboarding flows.</li>
+                    <li><strong>Develop:</strong> Designed grid guides and interactive mobile screen wireframes in Figma.</li>
+                    <li><strong>Deliver:</strong> Designed dynamic custom icons, dark-theme layout variations, and responsive screens ready for front-end engineers.</li>
+                </ul>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Seafarers face spotty connection profiles at open sea. Standard data-heavy maps and real-time telemetry API structures cause standard mobile interfaces to break, lag, or fail entirely during operations.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Designed a connection-adaptive layout. When network bandwidth drops below standard levels, the UI pivots dynamically to high-contrast simple list elements and switches to offline-cached JSON telemetry charts, displaying last known coordinates clearly.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">Figma</span>
+                    <span class="chip">FigJam</span>
+                    <span class="chip">Adobe Illustrator</span>
+                    <span class="chip">CSS Variables</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="case-commodity-mkt">
+            <h2 class="modal-title">B2B Agricultural Commodity Marketplace Platform</h2>
+            <div class="modal-badge-row">
+                <span class="badge">Next.js</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">WebSockets</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Full-Stack Developer</strong>. Designed relational schemas, created REST APIs in Python using FastAPI, built the responsive dashboard framework in Next.js, and managed DB versioning structures.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>This B2B platform connects large-scale agricultural suppliers and commercial food producers. It allows sellers to catalog bulk crops (rice, wheat, corn) and enables buyers to enter real-time, transparent bidding contracts.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Architecture &amp; Features</h3>
+                <p>The backend operates asynchronously using Python's FastAPI, serving data to a React/Next.js frontend. Database schemas are hosted in PostgreSQL, allowing quick querying of bids, contracts, and shipment logs.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Real-time bids must propagate to all connected active bidders immediately. Standard polling creates huge server overhead, while database race conditions can allow two bids at the same timestamp to register incorrectly.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Implemented dual solutions: WebSockets for push-based live bid distributions, and database-level transaction locks in PostgreSQL ensuring bids are verified and written in sequential atomic blocks.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools &amp; Systems Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">Python 3.11</span>
+                    <span class="chip">FastAPI</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">Next.js</span>
+                    <span class="chip">Git / GitHub</span>
+                    <span class="chip">Alembic</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="case-sequence">
+            <h2 class="modal-title">Sequence: Financial Dashboard &amp; Banking Concept</h2>
+            <div class="modal-badge-row">
+                <span class="badge">Figma</span>
+                <span class="badge">Financial UI</span>
+                <span class="badge">Data Visualization</span>
+                <span class="badge">Glassmorphism</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Lead UI/UX Designer</strong> (Dec 2025). Managed visual style systems, chart layouts, color harmony definitions, and interactive components.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>Sequence is a premium banking and financial tracking dashboard. It focuses on rendering dense metrics (cash flows, tax reserves, and ledger operations) in a clean, visual format that reduces cognitive load.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Design Strategy</h3>
+                <p>We designed with a dark luxury, neon-accented appearance inspired by Vercel and Linear. Using card wrappers with subtle glowing borders, we structured data columns clearly to guide the user's focus through the transaction metrics.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Recruiting companies and testers indicated that typical financial charts look overcrowded on smaller screens, rendering detailed transaction graphs unreadable.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Developed dynamic collapsing charts that toggle details off on mobile. Designed a clean swipe-card component allowing users to slide between metrics instead of cramming them into a single viewport.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">Figma UI</span>
+                    <span class="chip">Design Tokens</span>
+                    <span class="chip">Adobe Photoshop</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="case-ompoi-b2b">
+            <h2 class="modal-title">OMPOI B2B Escrow &amp; Marketplace Platform</h2>
+            <div class="modal-badge-row">
+                <span class="badge">FastAPI</span>
+                <span class="badge">Next.js</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Role-Based Access Control</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Full-Stack Developer</strong> (Mar 2026). Designed and implemented the backend APIs, role database structures, schema upgrade files, and frontend dashboard components.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>OMPOI is an enterprise B2B platform managing marketplace catalogs, secure escrow transaction contracts, and shipping workflows. It requires strong role separations to verify user permissions at every stage.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Key Implementations</h3>
+                <ul class="modal-bullets">
+                    <li><strong>Role-Based Access Control:</strong> Created custom middleware in FastAPI ensuring Buyers, Sellers, Agents, and Administrators can only trigger verified endpoints.</li>
+                    <li><strong>Database Migration Engine:</strong> Configured Alembic environments to run automatic SQL schema revisions during platform upgrades.</li>
+                    <li><strong>AI Integration:</strong> Built API hooks to support automated product description rendering and price prediction models.</li>
+                </ul>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Executing schema updates in a production database containing active transactions can lock tables, causing site downtime and interrupting ongoing transactions.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Structured Alembic scripts to run with transactional blocks and non-blocking index additions. Designed APIs to fail-safely, ensuring live users experience no disruption during backend deployments.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">FastAPI</span>
+                    <span class="chip">Next.js / React</span>
+                    <span class="chip">Alembic</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">TypeScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="case-its-const">
+            <h2 class="modal-title">ITS Construction - Modern Corporate Website</h2>
+            <div class="modal-badge-row">
+                <span class="badge">Figma</span>
+                <span class="badge">Corporate Identity</span>
+                <span class="badge">Grid Layouts</span>
+                <span class="badge">Responsive Design</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Lead UI/UX Designer</strong> (Jan 2026). Defined the visual brand style guide, designed landing page layouts, created vector assets, and optimized responsive layouts.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>ITS Construction is a high-profile corporate web layout built for an industrial engineering and infrastructure company. The main focus was to establish a bold digital identity highlighting massive civil engineering projects, service pipelines, and corporate achievements.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Design System Details</h3>
+                <p>Used a stark, modern corporate style guide: deep blues and dark greys represent safety and solidity, balanced with bright gold/amber highlights representing machinery and dynamic progress. The layout relies on clean lines, large headlines, and ample whitespace.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Industrial companies have highly diverse portfolios, from highway infrastructure to private office builds. Organizing this massive catalog of information on a single corporate homepage easily overwhelms visitors.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Implemented a filtered, interactive gallery design. Users can toggle project scales (Large Civil, Commercial, Maintenance) instantly. A clean card carousel lists technical specifications in neat, expandable rows, preventing page clutter.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">Figma</span>
+                    <span class="chip">Adobe Photoshop</span>
+                    <span class="chip">Vector Guides</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="case-hospital">
+            <h2 class="modal-title">Integrated Hospital Patient Database Solution</h2>
+            <div class="modal-badge-row">
+                <span class="badge">PL/SQL</span>
+                <span class="badge">Oracle DB</span>
+                <span class="badge">Performance Optimization</span>
+                <span class="badge">Triggers</span>
+            </div>
+            
+            <div class="case-section">
+                <h3>My Role</h3>
+                <p><strong>Database Developer</strong> (Aug 2025). Designed the patient table relationship schemes, configured cross-department data sharing flows, and optimized execution speeds.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Project Overview</h3>
+                <p>Designed a secure, relational database system for a major multi-department hospital. The system facilitates immediate access to patient charts, medication timelines, and room occupancy schedules across various floors.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Key Database Implementations</h3>
+                <ul class="modal-bullets">
+                    <li><strong>PL/SQL Optimization:</strong> Created complex stored procedures to automate cross-billing calculations.</li>
+                    <li><strong>Data Integrity:</strong> Wrote triggers that automatically log auditor edits to medication lists, maintaining strict compliance records.</li>
+                    <li><strong>Indices:</strong> Built targeted index maps on patient identification numbers to speed up lookups during emergency intakes.</li>
+                </ul>
+            </div>
+            
+            <div class="case-section">
+                <h3>Challenges</h3>
+                <p>Under peak load, concurrent patient requests from the pharmacy and ER slowed retrieval times to over 4 seconds per record, creating bottlenecking issues for hospital staff.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Solutions</h3>
+                <p>Rebuilt legacy nested queries into optimized join patterns and established table-partitioning based on admission dates. These modifications reduced peak load query responses to just 4 milliseconds.</p>
+            </div>
+            
+            <div class="case-section">
+                <h3>Tools Used</h3>
+                <div class="modal-tool-chips">
+                    <span class="chip">Oracle SQL Developer</span>
+                    <span class="chip">PL/SQL Packages</span>
+                    <span class="chip">Execution Planner</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS Files -->
+    <script src="script.js?v=3"></script>
+</body>
+</html>
