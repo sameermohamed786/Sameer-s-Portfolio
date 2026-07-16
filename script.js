@@ -601,4 +601,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Contact Form Submit Handler -> Redirects to WhatsApp with Form Data
+    const contactForm = document.getElementById('portfolio-contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value.trim();
+            const email = document.getElementById('form-email').value.trim();
+            const subject = document.getElementById('form-subject').value.trim();
+            const message = document.getElementById('form-message').value.trim();
+            
+            const text = `Hello Sameer, I would like to collaborate with you!\n\n` +
+                         `*Name:* ${name}\n` +
+                         `*Email:* ${email}\n` +
+                         `*Subject:* ${subject}\n` +
+                         `*Project/Opportunity:* ${message}`;
+            
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/919025477476?text=${encodedText}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset the form
+            contactForm.reset();
+        });
+    }
+
 });
